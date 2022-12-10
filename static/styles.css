@@ -1,0 +1,251 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure
+, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+footer {
+    padding: 10px 20px;
+    background: #666;
+    color: black;
+}
+footer:div{
+    color : white;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    margin: 0;
+    width: 100vw;
+    background: #202124;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1600px;
+    height: 700px auto;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #37383A;
+    box-shadow: 14px 14px 20px #1F2021, -14px -14px 20px #242526;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-logo {
+    height: 150px;
+    width: 150px;
+    background: url("https://www.esilv.fr/ecole-ingenieur/wp-content/uploads/2020/09/logo-esilv-b-150.png");
+    margin: 2px;
+    border-radius: 8%;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px #242526, -7px -7px 10px #37383A;
+    display: inline-block;
+}
+
+.brand-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    text-shadow: #1F2021 6px 0 6px;
+}
+.brand-subtitle {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    text-shadow: #1F2021 6px 0 6px;
+}
+
+.result {
+  margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+}
+
+.input_label {
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    color: white;
+    font-weight: 600;
+}
+
+.queryname {
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    color: #A00C40;
+    font-weight: 800;
+}
+
+inputsOptions {
+    background: #ecf0f3;
+    height: 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: white;
+    padding: 14px 12px;
+    display: block;
+    width: 50%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.inputsOptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+    .inputsOptions div {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.radios {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.radios_year {
+    margin-top: 10px;
+}
+.month {
+    margin-top: 30px;
+}
+
+.option {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.optionTitle {
+    margin-bottom: 20px;
+}
+
+
+button {
+    margin: 60px auto;
+    background: #CF1052;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    width: 100px;
+    transition: background-color .3s;
+    display: block;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+    button:hover {
+        color: white;
+        background-color: #A00C40;
+    }
+
+
+a.button {
+    margin: 5px auto;
+    background: #CF1052;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    width: 200px;
+    transition: background-color .3s;
+    display: block;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+    a.button:hover {
+        color: #A00C40;
+        background-color: white;
+    }
+
+#wrapper {
+    margin: 20px;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    table td, table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        background-color:#f2f2f2;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #ddd;
+    }
+
+    table tr:hover {
+        background-color: #ddd;
+    }
+
+    table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: #A00C40;
+        color: white;
+        font-weight:700;
+    }

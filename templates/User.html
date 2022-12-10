@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>User</title>
+    <link href="../static/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="brand-title">USER</div>
+        <div><a href="{{ url_for('home') }}" class="button">Home</a></div>
+
+        <br />
+        <form class="inputs" action="{{ url_for('query1')}}" method="post">
+
+            <div class="inputsOptions">
+                <div class="queryname">Information on a movie :</div>
+                <div>
+                    <label class="input_label" for="Movie">Movie name</label>
+                    <input type="text" name="Movie" id="Movie" placeholder=" ex : Titanic" autocomplete="off" required />
+                </div>
+                <button type="submit">QUERY 1</button>
+            </div>
+
+        </form>
+
+        <form class="inputs" action="{{ url_for('query2')}}" method="post">
+
+            <div class="inputsOptions">
+                <div class="queryname">Information on an actor :</div>
+                <div>
+                    <label class="input_label" for="Given Name">Actor given Name</label>
+                    <input type="text" name="Given Name" id="Given Name" placeholder=" ex : Daniel" autocomplete="off" required />
+                </div>
+                <div>
+                    <label class="input_label" for="Last name">Actor lastname</label>
+                    <input type="text" name="Last Name" id="Last Name" placeholder=" ex : Craig" autocomplete="off" required />
+                </div>
+                <button type="submit">QUERY 2</button>
+            </div>
+
+        </form>
+
+        <form class="inputs" action="{{ url_for('query3')}}" method="post">
+
+            <div class="inputsOptions">
+                <div class="queryname">Actors often playing with him :</div>
+                <div>
+                    <label class="input_label" for="Given Name 2">Actor given Name</label>
+                    <input type="text" name="Given Name 2" id="Given Name 2" placeholder=" ex : Brad" autocomplete="off" required />
+                </div>
+                <div>
+                    <label class="input_label" for="Last name 2">Actor lastname</label>
+                    <input type="text" name="Last Name 2" id="Last Name 2" placeholder=" ex : Pitt" autocomplete="off" required />
+                </div>
+                <button type="submit">QUERY 3</button>
+            </div>
+
+        </form>
+
+        <form class="inputs" action="{{ url_for('query4')}}" method="post">
+
+            <div class="inputsOptions">
+                <div class="queryname">Information on a director :</div>
+                <div>
+                    <label class="input_label" for="Real Given Name">Real name</label>
+                    <input type="text" name="Real Given Name" id="Real Given Name" placeholder=" ex : Quentin" autocomplete="off" required />
+                </div>
+                <div>
+                    <label class="input_label" for="Real Last name">Real lastname</label>
+                    <input type="text" name="Real Last Name" id="Real Last Name" placeholder=" ex : Tarantino" autocomplete="off" required />
+                </div>
+                <button type="submit">QUERY 4</button>
+            </div>
+
+        </form>
+        <div class="footer">
+            <p>Structure de données pour le cloud - 2022/2023</p>
+        </div>
+
+    </div>
+    
+</body>
+  </html>

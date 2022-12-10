@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Analyst</title>
+    <link href="../static/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="brand-title">ANALYST</div>
+        <div><a href="{{ url_for('home') }}" class="button">Home</a></div>
+
+        <br />
+        <form class="inputs" action="{{ url_for('query5')}}" method="post">
+
+            <div class="inputsOptions">
+                <div class="queryname">Top Real for a genre :</div>
+                <div>
+                    <label class="input_label" for="Genre">Genre</label>
+                    <input type="text" name="Genre" id="Genre" placeholder=" ex : Comedy" autocomplete="off" required />
+                </div>
+                <button type="submit">QUERY 5</button>
+            </div>
+
+        </form>
+
+        <form class="inputs" action="{{ url_for('query7')}}" method="post">
+
+            <div class="inputsOptions">
+                <div class="queryname">Top genres since year N :</div>
+                <div>
+                    <label class="input_label" for="Year">Year</label>
+                    <input type="number" name="Year" id="Year" placeholder=" ex : 2002" autocomplete="off" min="1910" max="2004" required />
+                </div>
+                <button type="submit">QUERY 7</button>
+            </div>
+
+        </form>
+
+        <form class="inputs" action="{{ url_for('query8')}}" method="post">
+            <div class="queryname">Actor with longest longevity :</div>
+            <button type="submit">QUERY 8</button>
+        </form>
+        <div class="footer">
+            <p>Structure de données pour le cloud - 2022/2023</p>
+        </div>
+    </div>
+</body>
+
+  </html>
