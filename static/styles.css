@@ -207,6 +207,32 @@ a.button {
         background-color: white;
     }
 
+
+a.button2 {
+    margin: 5px auto;
+    background: #A00C40;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    width: 100px;
+    transition: background-color .3s;
+    display: block;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+    a.button2:hover {
+        color: #A00C40;
+        background-color: white;
+    }
+
 #wrapper {
     margin: 20px;
     text-align: center;
@@ -222,6 +248,13 @@ a.button {
     text-align: center;
 }
 
+.title_great {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
 table {
     border-collapse: collapse;
     width: 100%;

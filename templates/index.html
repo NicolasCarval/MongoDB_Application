@@ -14,9 +14,12 @@
 
         <a href="{{ url_for('User') }}" class="button">User Queries</a>
         <a href="{{ url_for('Analyst') }}" class="button">Analyst Queries</a>
+        <form class="inputs" action="{{ url_for('Admin_query')}}" method="post">
+            <button type="submit" class="button2">Admin</button> 
+        </form>
 
         <div id="wrapper"><div class="brand-logo"></div></div>
-        
+
         <div class="footer">
             <p>Structure de données pour le cloud - 2022/2023</p>
         </div>
