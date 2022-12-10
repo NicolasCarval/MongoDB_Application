@@ -17,7 +17,8 @@ We had to then create an app in order to visualize queries.
 
 ### Visualisation of our APP :
 
-![image](https://user-images.githubusercontent.com/84092005/206853053-0cfd250f-ab04-4a72-8203-91d58d18fb20.png)
+![image](https://user-images.githubusercontent.com/84092005/206866073-c1e6e212-369c-44de-b1e7-8273234f9e8a.png)
+
 
 
 Thanks for reading !
